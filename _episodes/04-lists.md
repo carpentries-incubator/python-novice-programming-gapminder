@@ -29,7 +29,7 @@ multiple values in a list as well as how to work with lists.
 
 ## Python lists
 
-Unlike NumPy arrays, lists are built into the language so we do not have to load a library
+Unlike when we used `pandas`, lists are built into the language so we do not have to load a library
 to use them.
 We create a list by putting values inside square brackets and separating the values with commas:
 
