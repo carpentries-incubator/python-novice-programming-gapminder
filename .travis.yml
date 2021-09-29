@@ -1,0 +1,16 @@
+# Travis CI is only used to check the lesson and is not involved in its deployment
+language: python
+python: 3.6
+branches:
+  only:
+  - gh-pages
+  - /.*/
+before_install:
+  - rvm use 2.7.1 --install --binary --fuzzy --default
+  - gem install json kramdown jekyll bundler
+install:
+  - pip install pyyaml
+script:
+  - make lesson-check
+  - make lesson-check-all
+  - make site
