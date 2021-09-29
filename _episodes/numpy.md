@@ -8,11 +8,11 @@ objectives:
 - "Explain what a library is and what libraries are used for."
 - "Import a Python library and use the functions it contains."
 - "Read tabular data from a file into a program."
-- "Select individual values and subsections from data."
-- "Perform operations on arrays of data."
+- "Get some basic information about a Pandas DataFrame."
+
 keypoints:
 - "Import a library into a program using `import libraryname`."
-- "Use the `numpy` library to work with arrays in Python."
+- "Use the `panda` library to work with arrays in Python."
 - "The expression `array.shape` gives the shape of an array."
 - "Use `array[x, y]` to select a single element from a 2D array."
 - "Array indices start at 0, not 1."
