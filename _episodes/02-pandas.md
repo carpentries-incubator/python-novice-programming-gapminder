@@ -11,7 +11,7 @@ objectives:
 - "Import the Pandas library"
 - "Use Pandas to read a simple CSV data set"
 - "Get some basic information about a Pandas Dataframe"
- keypoints:
+keypoints:
 - "Import a library into a program using `import libraryname`."
 - "Use the `pandas` library to work with arrays in Python."
 - "Array indices start at 0, not 1."
@@ -19,7 +19,6 @@ objectives:
 - "Use `:` on its own to mean all columns or all rows."
 - "Select multiple columns or rows using `DataFrame.loc` and a named slice."
 - "Result of slicing can be used in further operations."
-
 ---
 
 ## Our dataset
