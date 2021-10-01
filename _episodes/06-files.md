@@ -1,5 +1,5 @@
 ---
-title: Analyzing Data From Mutliple Files
+title: "Analyzing Data From Mutliple Files"
 teaching: 20
 exercises: 0
 questions:

@@ -1,26 +1,24 @@
 ---
-title: Analyzing Data
+title: "Analyzing Data"
 teaching: 40
 exercises: 20
 questions:
- - "What dataset are we using today?"
- - "How can I process tabular data files in Python?"
- 
+- "What dataset are we using today?"
+- "How can I process tabular data files in Python?"
 objectives:
- - "Introduce dataset"
- - "Explain what a library is and what libraries are used for."
- - "Import the Pandas library"
- - "Use Pandas to read a simple CSV data set"
- - "Get some basic information about a Pandas Dataframe"
- 
+- "Introduce dataset"
+- "Explain what a library is and what libraries are used for."
+- "Import the Pandas library"
+- "Use Pandas to read a simple CSV data set"
+- "Get some basic information about a Pandas Dataframe"
  keypoints:
- - "Import a library into a program using `import libraryname`."
- - "Use the `pandas` library to work with arrays in Python."
- - "Array indices start at 0, not 1."
- - "Use `DataFrame.iloc[..., ...]` to select values by integer location."
- - "Use `:` on its own to mean all columns or all rows."
- - "Select multiple columns or rows using `DataFrame.loc` and a named slice."
- - "Result of slicing can be used in further operations."
+- "Import a library into a program using `import libraryname`."
+- "Use the `pandas` library to work with arrays in Python."
+- "Array indices start at 0, not 1."
+- "Use `DataFrame.iloc[..., ...]` to select values by integer location."
+- "Use `:` on its own to mean all columns or all rows."
+- "Select multiple columns or rows using `DataFrame.loc` and a named slice."
+- "Result of slicing can be used in further operations."
 
 ---
 
