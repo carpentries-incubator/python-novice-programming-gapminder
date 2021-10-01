@@ -1,5 +1,5 @@
 ---
-title: Analyzing Patient Data
+title: Analyzing Data
 teaching: 40
 exercises: 20
 questions:
