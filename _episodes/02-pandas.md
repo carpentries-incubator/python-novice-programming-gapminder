@@ -522,24 +522,6 @@ dtype: float64
 > {: .solution}
 {: .challenge}
 
-> ## Thin Slices
->
-> The expression `element[3:3]` produces an
-> [empty string]({{ page.root }}/reference.html#empty-string),
-> i.e., a string that contains no characters.
-> If `data` holds our array of patient data,
-> what does `data[3:3, 4:4]` produce?
-> What about `data[3:3, :]`?
->
-> > ## Solution
-> > ~~~
-> > array([], shape=(0, 0), dtype=float64)
-> > array([], shape=(0, 40), dtype=float64)
-> > ~~~
-> > {: .output}
-> {: .solution}
-{: .challenge}
-
 > ## Selection of Individual Values
 >
 > Assume Pandas has been imported into your notebook
