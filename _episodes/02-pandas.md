@@ -62,13 +62,6 @@ need for each program.
     *   Argument is the name of the file to be read.
     *   Assign result to a variable to store the data that was read.
 
-~~~
-import numpy
-~~~
-{: .language-python}
-
-
-
 Once we've imported the library, we can ask the library to read our data file for us:
 ~~~
 import pandas as pd
