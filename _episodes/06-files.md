@@ -105,8 +105,6 @@ data/gapminder_gdp_oceania.csv 10039.59564
 *   But note that the minimum of the entire data set is also the minimum of one of the data sets,
     which is a nice check on correctness.
 
-
-
 ** TODO add example here of using wildcard to generate a plot from multiple files **
 
 > ## Determining Matches

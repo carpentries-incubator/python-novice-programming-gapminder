@@ -241,14 +241,12 @@ Notice that rather than jumbling this code together in one giant `for` loop,
 we can now read and reuse both ideas separately.
 We can reproduce the previous analysis with a much simpler `for` loop:
 
-# Swap filename in example below, delete reference to detect_problems
 ~~~
-filenames = sorted(glob.glob('inflammation*.csv'))
+filenames = sorted(glob.glob('data/gapminder_gdp_a[fs]*.csv'))
 
-for filename in filenames[:3]:
+for filename in filenames:
     print(filename)
     visualize(filename)
-    detect_problems(filename)
 ~~~
 {: .language-python}
 
@@ -595,21 +593,28 @@ With that in hand,
 let's look at the help for `numpy.loadtxt`:
 
 ~~~
-help(numpy.loadtxt)
+help(pd.DataFrame)
 ~~~
 {: .language-python}
 
 ~~~
-Help on function loadtxt in module numpy.lib.npyio:
+Help on class DataFrame in module pandas.core.frame:
 
-loadtxt(fname, dtype=<class 'float'>, comments='#', delimiter=None, converters=None, skiprows=0, use
-cols=None, unpack=False, ndmin=0, encoding='bytes')
-    Load data from a text file.
-
-    Each row in the text file must have the same number of values.
-
-    Parameters
-    ----------
+class DataFrame(pandas.core.generic.NDFrame, pandas.core.arraylike.OpsMixin)
+ |  DataFrame(data=None, index: 'Optional[Axes]' = None, columns: 'Optional[Axes]' = None, dtype: 'Optional[Dtype]' = None, copy: 'bool' = False)
+ |  
+ |  Two-dimensional, size-mutable, potentially heterogeneous tabular data.
+ |  
+ |  Data structure also contains labeled axes (rows and columns).
+ |  Arithmetic operations align on both row and column labels. Can be
+ |  thought of as a dict-like container for Series objects. The primary
+ |  pandas data structure.
+ |  
+ |  Parameters
+ |  ----------
+ |  data : ndarray (structured or homogeneous), Iterable, dict, or DataFrame
+ |      Dict can contain Series, arrays, constants, dataclass or list-like objects. If
+ |      data is a dict, column order follows insertion-order.
 ...
 ~~~
 {: .output}
