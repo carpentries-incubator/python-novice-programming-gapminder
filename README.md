@@ -20,7 +20,7 @@ how it is better to automate analysis using functions instead of repeating analy
 steps manually.
 
 The rendered version of the lesson is available at:
-<https://swcarpentry.github.io/python-novice-inflammation/>.
+<https://nclrse-training.github.io/python-novice/>.
 
 This lesson is also available in [R][R] and [MATLAB][MATLAB].
 
