@@ -207,27 +207,21 @@ we can make our inflammation analysis easier to read and easier to reuse.
 First, let's make a `visualize` function that generates our plots:
 
 ~~~
+import matplotlib.pyplot as plt
 def visualize(filename):
+    data = pd.read_csv(filename, index_col='country')
+    fig = plt.figure()
+    fig, ax = plt.subplots(1, 2, figsize=(12.0, 5.0))
+    
+    data.columns = data.columns.str.strip('gdpPercap_')
 
-    data = numpy.loadtxt(fname=filename, delimiter=',')
-
-    fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
-
-    axes1 = fig.add_subplot(1, 3, 1)
-    axes2 = fig.add_subplot(1, 3, 2)
-    axes3 = fig.add_subplot(1, 3, 3)
-
-    axes1.set_ylabel('average')
-    axes1.plot(numpy.mean(data, axis=0))
-
-    axes2.set_ylabel('max')
-    axes2.plot(numpy.max(data, axis=0))
-
-    axes3.set_ylabel('min')
-    axes3.plot(numpy.min(data, axis=0))
-
+    ax[0].set_ylabel(data.index[0])
+    ax[0].plot(data.loc[data.index[0]])
+    ax[1].set_ylabel(data.index[1])
+    ax[1].plot(data.loc[data.index[1]])
+    
     fig.tight_layout()
-    matplotlib.pyplot.show()
+    plt.show()
 ~~~
 {: .language-python}
 
