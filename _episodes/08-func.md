@@ -201,7 +201,6 @@ temperature in Kelvin was: 373.15
 {: .output}
 
 
-## Tidying up - REPLACE numpy exercise with pandas example
 
 Now that we know how to wrap bits of code up in functions,
 we can make our inflammation analysis easier to read and easier to reuse.
