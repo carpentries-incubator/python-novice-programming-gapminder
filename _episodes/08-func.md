@@ -242,12 +242,11 @@ we can now read and reuse both ideas separately.
 We can reproduce the previous analysis with a much simpler `for` loop:
 
 ~~~
-filenames = sorted(glob.glob('inflammation*.csv'))
+filenames = sorted(glob.glob('data/gapminder_gdp_a[fs]*.csv'))
 
-for filename in filenames[:3]:
+for filename in filenames:
     print(filename)
     visualize(filename)
-    detect_problems(filename)
 ~~~
 {: .language-python}
 
