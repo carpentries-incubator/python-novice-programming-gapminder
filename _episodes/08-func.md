@@ -201,7 +201,6 @@ temperature in Kelvin was: 373.15
 {: .output}
 
 
-## Tidying up - REPLACE numpy exercise with pandas example
 
 Now that we know how to wrap bits of code up in functions,
 we can make our inflammation analysis easier to read and easier to reuse.
@@ -242,7 +241,6 @@ Notice that rather than jumbling this code together in one giant `for` loop,
 we can now read and reuse both ideas separately.
 We can reproduce the previous analysis with a much simpler `for` loop:
 
-# Swap filename in example below, delete reference to detect_problems
 ~~~
 filenames = sorted(glob.glob('inflammation*.csv'))
 
