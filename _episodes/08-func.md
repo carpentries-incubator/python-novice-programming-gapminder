@@ -593,21 +593,28 @@ With that in hand,
 let's look at the help for `numpy.loadtxt`:
 
 ~~~
-help(numpy.loadtxt)
+help(pd.DataFrame)
 ~~~
 {: .language-python}
 
 ~~~
-Help on function loadtxt in module numpy.lib.npyio:
+Help on class DataFrame in module pandas.core.frame:
 
-loadtxt(fname, dtype=<class 'float'>, comments='#', delimiter=None, converters=None, skiprows=0, use
-cols=None, unpack=False, ndmin=0, encoding='bytes')
-    Load data from a text file.
-
-    Each row in the text file must have the same number of values.
-
-    Parameters
-    ----------
+class DataFrame(pandas.core.generic.NDFrame, pandas.core.arraylike.OpsMixin)
+ |  DataFrame(data=None, index: 'Optional[Axes]' = None, columns: 'Optional[Axes]' = None, dtype: 'Optional[Dtype]' = None, copy: 'bool' = False)
+ |  
+ |  Two-dimensional, size-mutable, potentially heterogeneous tabular data.
+ |  
+ |  Data structure also contains labeled axes (rows and columns).
+ |  Arithmetic operations align on both row and column labels. Can be
+ |  thought of as a dict-like container for Series objects. The primary
+ |  pandas data structure.
+ |  
+ |  Parameters
+ |  ----------
+ |  data : ndarray (structured or homogeneous), Iterable, dict, or DataFrame
+ |      Dict can contain Series, arrays, constants, dataclass or list-like objects. If
+ |      data is a dict, column order follows insertion-order.
 ...
 ~~~
 {: .output}
