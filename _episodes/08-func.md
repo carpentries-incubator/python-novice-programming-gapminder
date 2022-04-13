@@ -31,11 +31,15 @@ keypoints:
    then call it with different parameter values to customize its behavior."
 ---
 
+<!-- FIXME
+
 At this point,
 we've written code to draw some interesting features in our inflammation data,
 loop over all our data files to quickly draw these plots for each of them,
 and have Python make decisions based on what it sees in our data.
-But, our code is getting pretty long and complicated;
+-->
+
+Our code is getting pretty long and complicated;
 what if we had thousands of datasets,
 and didn't want to generate a figure for every single one?
 Commenting out the figure-drawing code is a nuisance.
