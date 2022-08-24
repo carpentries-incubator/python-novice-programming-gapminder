@@ -8,7 +8,7 @@ permalink: index.html
 
 In presenting the two available Python lessons, Programming with Python and Plotting and Programming in Python, we found that we preferred the structure of the former but the dataset and Pandas module used in the latter. This lesson thus follows the structure of Programming with Python but uses the Gapminder dataset and examples which makes use of Pandas rather than Numpy.
 
-Pandas is suitable for data analysis and manipulation. If a more numerical approach is required for the learners, then the lesson, Programming with Python that uses the Numpy module, might be more suitable. NumPy is primarily used for performing numerical calculations. The lesson serves as an introduction to Python 3 for people with little or no previous programming experience.
+Pandas is suitable for data analysis and manipulation. If a more numerical approach is required for the learners, then the lesson, Programming with Python that uses the Numpy module, might be more suitable. NumPy is primarily used for performing numerical calculations. This lesson serves as an introduction to Python 3 for people with little or no previous programming experience.
 
 > ## Prerequisites
 >
