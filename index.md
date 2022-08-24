@@ -4,11 +4,28 @@ root: .
 permalink: index.html
 ---
 
-The best way to learn how to program is to do something useful,
-so this introduction to Python is built around a common scientific task:
-**data analysis**.
 
-### GDP per Capita
-We are using the GapMinder dataset which is GDP per capita. Which is income per person and for each country we have the data over several years between 1952 and 2007. We also have life expectancy. We have a range of countries labelled with the continent the country is located in.
+
+In presenting the two available Python lessons, Programming with Python and Plotting and Programming in Python, we found that we preferred the structure of the former but the dataset and Pandas module used in the latter. This lesson thus follows the structure of Programming with Python but uses the Gapminder dataset and examples which makes use of Pandas rather than Numpy.
+
+Pandas is suitable for data analysis and manipulation. If a more numerical approach is required for the learners, then the lesson, Programming with Python that uses the Numpy module, might be more suitable. NumPy is primarily used for performing numerical calculations. The lesson serves as an introduction to Python 3 for people with little or no previous programming experience.
+
+> ## Prerequisites
+>
+> 1.  Learners need to understand what files and directories are,
+>     what a working directory is,
+>     and how to start a Python interpreter,
+>     
+> 2.  Learners must have Python 3 installed or have access to an instance of Jupyter Notebook before the class starts.
+>
+> 3.  Learners must get the gapminder data before the class starts:
+>   please download and unzip the file
+>   [python-novice-gapminder-data.zip]({{page.root}}/files/python-novice-gapminder-data.zip).
+>   
+>   Please see the [setup instructions][lesson-setup]
+>   for more details.
+>   {: .prereq}
+>   
+
 
 {% include links.md %}
