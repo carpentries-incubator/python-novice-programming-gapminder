@@ -20,7 +20,7 @@ how it is better to automate analysis using functions instead of repeating analy
 steps manually.
 
 The rendered version of the lesson is available at:
-<https://nclrse-training.github.io/python-novice/>.
+[https://nclrse-training.github.io/python-novice/](https://carpentries-incubator.github.io/python-novice-programming-gapminder/).
 
 This lesson is also available in [R][R] and [MATLAB][MATLAB].
 
