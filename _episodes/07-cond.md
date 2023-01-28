@@ -1,7 +1,7 @@
 ---
 title: Making Choices
 teaching: 30
-exercises: 0
+exercises: 10
 questions:
 - "How can my programs do different things based on data values?"
 objectives:
