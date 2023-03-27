@@ -20,7 +20,7 @@ Pandas is suitable for data analysis and manipulation. If a more numerical appro
 >
 > 3.  Learners must get the gapminder data before the class starts:
 >   please download and unzip the file
->   [python-novice-gapminder-data.zip]({{page.root}}/files/python-novice-gapminder-data.zip).
+>   [python-novice-gapminder-data.zip](files/python-novice-gapminder-data.zip).
 >   
 >   Please see the [setup instructions][lesson-setup]
 >   for more details.
