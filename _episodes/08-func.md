@@ -214,7 +214,6 @@ First, let's make a `visualize` function that generates our plots:
 import matplotlib.pyplot as plt
 def visualize(filename):
     data = pd.read_csv(filename, index_col='country')
-    fig = plt.figure()
     fig, ax = plt.subplots(1, 2, figsize=(12.0, 5.0))
     
     data.columns = data.columns.str.strip('gdpPercap_')
