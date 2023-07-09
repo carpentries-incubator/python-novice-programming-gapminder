@@ -46,8 +46,8 @@ and to meet some of our community members.
 ## Where to Contribute
 
 1.  If you wish to change this lesson,
-    please work in <https://github.com/swcarpentry/python-novice-inflammation>,
-    which can be viewed at <https://swcarpentry.github.io/python-novice-inflammation>.
+    please work in <https://github.com/carpentries-incubator/python-novice-programming-gapminder>,
+    which can be viewed at <>https://carpentries-incubator.github.io/python-novice-programming-gapminder/.
 
 2.  If you wish to change the example lesson,
     please work in <https://github.com/carpentries/lesson-example>,
