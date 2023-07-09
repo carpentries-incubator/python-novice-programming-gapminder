@@ -8,9 +8,7 @@ An introduction to Python for non-programmers using inflammation data.
 
 ## About the Lesson
 
-This lesson teaches novice programmers to write modular code to perform data analysis
-using Python. The emphasis, however, is on teaching language-agnostic principles of
-programming such as automation with loops and encapsulation with functions,
+This lesson teaches novice programmers to perform data analysis in Python using modular code (independent chunks of code that contain all the functionality required to execute a desired task). The emphasis, however, is on teaching language-agnostic principles of programming which will be useful across all programming languages such as automation with loops and encapsulation with functions,
 see [Best Practices for Scientific Computing][best-practices] and
 [Good enough practices in scientific computing][good-practices] to learn more.
 
@@ -20,7 +18,7 @@ how it is better to automate analysis using functions instead of repeating analy
 steps manually.
 
 The rendered version of the lesson is available at:
-<https://nclrse-training.github.io/python-novice/>.
+[https://nclrse-training.github.io/python-novice/](https://carpentries-incubator.github.io/python-novice-programming-gapminder/).
 
 This lesson is also available in [R][R] and [MATLAB][MATLAB].
 

@@ -1,7 +1,7 @@
 ---
 title: "Analyzing Data From Mutliple Files"
 teaching: 20
-exercises: 0
+exercises: 10
 questions:
 - "How can I do the same operations on many different files?"
 objectives:
