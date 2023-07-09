@@ -33,15 +33,15 @@ This is great but not very interesting.
 To do anything useful with data, we need to assign its value to a _variable_.
 In Python, we can [assign]({{ page.root }}/reference.html#assign) a value to a
 [variable]({{ page.root }}/reference.html#variable), using the equals sign `=`.
-For example, we can track the weight of a patient who weighs 60 kilograms by
-assigning the value `60` to a variable `weight_kg`:
+For example we can capture the gross domestic power per capita for a country by 
+assinging the value ? to a variable gdpPercapUSD:
 
 ~~~
-weight_kg = 60
+gdpPercapUSD = 2449
 ~~~
 {: .language-python}
 
-From now on, whenever we use `weight_kg`, Python will substitute the value we assigned to
+From now on, whenever we use `gdpPercapUSD`, Python will substitute the value we assigned to
 it. In layman's terms, **a variable is a name for a value**.
 
 In Python, variable names:
@@ -51,8 +51,8 @@ In Python, variable names:
  - are [case sensitive]({{ page.root }}/reference.html#case-sensitive).
 
 This means that, for example:
- - `weight0` is a valid variable name, whereas `0weight` is not
- - `weight` and `Weight` are different variables
+ - `gdpPercap0` is a valid variable name, whereas `0gdpPercap` is not
+ - `gdp_percap` and `GDP_percap` are different variables
 
 ## Types of data
 Python knows various types of data. Three common ones are:
@@ -61,38 +61,38 @@ Python knows various types of data. Three common ones are:
 * floating point numbers, and
 * strings.
 
-In the example above, variable `weight_kg` has an integer value of `60`.
-If we want to more precisely track the weight of our patient,
+In the example above, variable `gdpPercapUSD` has an integer value of `2449`.
+If we want to capture the gdp per capita of the country more precisely
 we can use a floating point value by executing:
 
 ~~~
-weight_kg = 60.3
+gdpPercapUSD = 2449.008185
 ~~~
 {: .language-python}
 
 To create a string, we add single or double quotes around some text.
-To identify and track a patient throughout our study,
-we can assign each person a unique identifier by storing it in a string:
+To keep track of the year we are working with we can store the year
+in a string:
 
 ~~~
-patient_id = '001'
+year = "1952"
 ~~~
 {: .language-python}
 
 ## Using Variables in Python
 
 Once we have data stored with variable names, we can make use of it in calculations.
-We may want to store our patient's weight in pounds as well as kilograms:
+We may want to store the country's gdp percapita in US dollars and in British pounds:
 
 ~~~
-weight_lb = 2.2 * weight_kg
+gdpPercapGBP = gdpPercapUSD * 0.779063
 ~~~
 {: .language-python}
 
-We might decide to add a prefix to our patient identifier:
+We could add the year to the label `gdpPercap_`
 
 ~~~
-patient_id = 'inflam_' + patient_id
+columnlabel = 'gdpPercap_' + year
 ~~~
 {: .language-python}
 
@@ -103,14 +103,16 @@ the language provides us with several built-in [functions]({{ page.root }}/refer
 To display information to the screen, we use the `print` function:
 
 ~~~
-print(weight_lb)
-print(patient_id)
+print(gdpPercapUSD)
+print(gdpPercapGBP)
+print(columnlabel)
 ~~~
 {: .language-python}
 
 ~~~
-132.66
-inflam_001
+2249.008185
+1752.119063630655
+gdpPercap_1952
 ~~~
 {: .output}
 
@@ -125,11 +127,11 @@ We will learn more about how functions work and how to create our own in later e
 We can display multiple things at once using only one `print` call:
 
 ~~~
-print(patient_id, 'weight in kilograms:', weight_kg)
+print(columnlabel , 'for Algeria:' , gdpPercapUSD , '(USD)')
 ~~~
 {: .language-python}
 ~~~
-inflam_001 weight in kilograms: 60.3
+gdpPercap_1952 for Algeria: 2249.008185 (USD)
 ~~~
 {: .output}
 
@@ -138,8 +140,8 @@ We can also call a function inside of another
 For example, Python has a built-in function called `type` that tells you a value's data type:
 
 ~~~
-print(type(60.3))
-print(type(patient_id))
+print(type(2249.008185))
+print(type(columnlabel))
 ~~~
 {: .language-python}
 
@@ -152,37 +154,37 @@ print(type(patient_id))
 Moreover, we can do arithmetic with variables right inside the `print` function:
 
 ~~~
-print('weight in pounds:', 2.2 * weight_kg)
+print('gdpPercap in GBP:', gdpPercapUSD * 0.779063)
 ~~~
 {: .language-python}
 
 ~~~
-weight in pounds: 132.66
+gdpPercap in GBP: 1752.119063630655
 ~~~
 {: .output}
 
-The above command, however, did not change the value of `weight_kg`:
+The above command, however, did not change the value of `gdpPercapUSD`:
 ~~~
-print(weight_kg)
+print(gdpPercapUSD)
 ~~~
 {: .language-python}
 
 ~~~
-60.3
+2249.008185
 ~~~
 {: .output}
 
-To change the value of the `weight_kg` variable, we have to
-**assign** `weight_kg` a new value using the equals `=` sign:
+To change the value of the `gdpPercapUSD` variable, we have to
+**assign** `gdpPercapUSD` a new value using the equals `=` sign:
 
 ~~~
-weight_kg = 65.0
-print('weight in kilograms is now:', weight_kg)
+gdpPercapUSD = 3520.610273	
+print('The gdp per capita for Angola in USD is:', gdpPercapUSD)
 ~~~
 {: .language-python}
 
 ~~~
-weight in kilograms is now: 65.0
+The gdp per capita for Angola in USD is: 3520.610273
 ~~~
 {: .output}
 
@@ -191,50 +193,50 @@ weight in kilograms is now: 65.0
 > A variable in Python is analogous to a sticky note with a name written on it:
 > assigning a value to a variable is like putting that sticky note on a particular value.
 >
-> ![Value of 65.0 with weight_kg label stuck on it](../fig/python-sticky-note-variables-01.svg)
+> ![Value 1062.752200 with gdpPercapUSD label stuck on it](../fig/python-sticky-note-variables-01.svg)
 >
 > Using this analogy, we can investigate how assigning a value to one variable
 > does **not** change values of other, seemingly related, variables.  For
-> example, let's store the subject's weight in pounds in its own variable:
+> example, let's store the, country Angola's, gdp per capita GPB in its own variable:
 >
 > ~~~
-> # There are 2.2 pounds per kilogram
-> weight_lb = 2.2 * weight_kg
-> print('weight in kilograms:', weight_kg, 'and in pounds:', weight_lb)
+> # gdp per capita for Angola
+> gdpPercapGBP = gdpPercapUSD * 0.779090
+> print('gdp per capita in GBP', gdpPercapGBP, 'and in USD:', gdpPercapUSD)
 > ~~~
 > {: .language-python}
 >
 > ~~~
-> weight in kilograms: 65.0 and in pounds: 143.0
+> gdp per capita in GBP 2742.8722575915695 and in USD: 3520.610273
 > ~~~
 > {: .output}
 >
-> ![Value of 65.0 with weight_kg label stuck on it, and value of 143.0 with weight_lb label
-stuck on it](../fig/python-sticky-note-variables-02.svg)
+> ![Value of 1062.752200 with gdpPercapUSD label stuck on it, and value 827.93957 
+with gdpPercapGBP label stuck on it](../fig/python-sticky-note-variables-02.svg)
 >
-> Similar to above, the expression `2.2 * weight_kg` is evaluated to `143.0`,
-> and then this value is assigned to the variable `weight_lb` (i.e. the sticky
-> note `weight_lb` is placed on `143.0`). At this point, each variable is
+> Similar to above, the expression `gdpPercapUSD * 0.779090` is evaluated to `2742.8722575915695`,
+> and then this value is assigned to the variable `gdpPercapGBP` (i.e. the sticky
+> note `gdpPercapGBP` is placed on `2742.8722575915695`). At this point, each variable is
 > "stuck" to completely distinct and unrelated values.
 >
-> Let's now change `weight_kg`:
+> Let's now change `gdpPercapUSD`:
 >
 > ~~~
-> weight_kg = 100.0
-> print('weight in kilograms is now:', weight_kg, 'and weight in pounds is still:', weight_lb)
+> gdpPercapUSD = 851.241141
+> print('gdp percapita in USD is now:', gdpPercapUSD, 'and gdp per capita in GBP is still: ', gdpPercapGBP)
 > ~~~
 > {: .language-python}
 >
 > ~~~
-> weight in kilograms is now: 100.0 and weight in pounds is still: 143.0
+> gdp percapita in USD is now: 851.241141 and gdp per capita in GBP is still:  2742.8722575915695
 > ~~~
 > {: .output}
 >
-> ![Value of 100.0 with label weight_kg stuck on it, and value of 143.0 with label weight_lb
+> ![Value of 851.241141 with gdpPercapUSD label stuck on it, and value of 2742.87225 with label gdpPercapGPB
 stuck on it](../fig/python-sticky-note-variables-03.svg)
 >
-> Since `weight_lb` doesn't "remember" where its value comes from,
-> it is not updated when we change `weight_kg`.
+> Since `gdpPercapGBP` doesn't "remember" where its value comes from,
+> it is not updated when we change `gdpPercapUSD`.
 {: .callout}
 
 
