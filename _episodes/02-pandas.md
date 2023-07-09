@@ -238,11 +238,11 @@ gdpPercap_2007  34435.36744  25185.00911
 
 ## Note about Pandas DataFrames/Series
 
-A [DataFrame][pandas-dataframe] is a collection of [Series][pandas-series];
+A DataFrame is a collection of Series;
 The DataFrame is the way Pandas represents a table, and Series is the data-structure
 Pandas use to represent a column.
 
-Pandas is built on top of the [Numpy][numpy] library, which in practice means that
+Pandas is built on top of the Numpy library, which in practice means that
 most of the methods defined for Numpy Arrays apply to Pandas Series/DataFrames.
 
 What makes Pandas so attractive is the powerful interface to access individual records
