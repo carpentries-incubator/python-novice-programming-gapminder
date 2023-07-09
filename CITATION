@@ -1,6 +1,7 @@
-Please cite as:
+Please cite this lesson as:
 
-Azalee Bostroem, Trevor Bekolay, and Valentina Staneva (eds):
-"Software Carpentry: Programming with Python."  Version 2016.06, June
-2016, https://github.com/swcarpentry/python-novice-inflammation,
-10.5281/zenodo.57492.
+Jannetta Steyn, Kate Court.
+Software Carpentry: Programming with Python (Gapminder)
+A merge of the lessons:
+- [Plotting and Programming in Python, https://swcarpentry.github.io/python-novice-gapminder/](https://swcarpentry.github.io/python-novice-gapminder/)
+- [Programming with Python, https://swcarpentry.github.io/python-novice-inflammation/](https://swcarpentry.github.io/python-novice-inflammation/)
