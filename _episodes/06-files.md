@@ -1,5 +1,5 @@
 ---
-title: "Analyzing Data From Mutliple Files"
+title: "Analyzing Data From Multiple Files"
 teaching: 20
 exercises: 10
 questions:
@@ -173,7 +173,9 @@ data/gapminder_gdp_oceania.csv 10039.59564
 > >     # retrieve the last string in the list that split returns (`{region}.csv`), 
 > >     # and then remove the `.csv` extension from that string.
 > >     region = filename.split('_')[-1][:-4] 
-> >     dataframe.mean().plot(ax=ax, label=region)
+> >    # pandas raises errors when it encounters non-numeric columns in a dataframe computation
+> >    # but we can tell pandas to ignore them with the `numeric_only` parameter
+> >     dataframe.mean(numeric_only=True).plot(ax=ax, label=region)
 > > plt.legend()
 > > plt.show()
 > > ~~~
